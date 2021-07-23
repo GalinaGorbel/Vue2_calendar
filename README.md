@@ -1,5 +1,7 @@
 # vue2_calendar
 
+Для того, чтобы зайти в календарь, необходимо пройти по [ссылке](https://vue2calendar.firebaseapp.com/)<br>
+
 ## Project setup
 ```
 npm install
