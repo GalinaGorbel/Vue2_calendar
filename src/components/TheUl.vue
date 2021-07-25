@@ -10,6 +10,6 @@ ul {
   justify-content: space-between;
   list-style: none;
   margin: 0;
-  padding: 15px;
+  padding: 5px;
 }
 </style>

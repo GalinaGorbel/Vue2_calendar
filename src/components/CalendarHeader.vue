@@ -1,5 +1,5 @@
 <template>
-  <the-ul>
+  <the-ul class="header">
     <li class="btn" @click="prev">←</li>
     <li>{{ monthName }} {{ year }}</li>
     <li class="btn" @click="next">→</li>
@@ -43,5 +43,8 @@ export default {
 <style>
 .btn {
   cursor: pointer;
+}
+.header {
+  padding: 10px;
 }
 </style>

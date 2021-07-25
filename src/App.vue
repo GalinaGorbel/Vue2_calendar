@@ -94,6 +94,6 @@ body {
   max-width: 600px;
   border: 1px solid gray;
   margin: auto;
-  padding: 15px;
+  padding: 20px;
 }
 </style>
