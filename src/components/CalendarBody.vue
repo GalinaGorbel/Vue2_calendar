@@ -64,6 +64,7 @@ li {
   flex-grow: 1;
   flex-basis: 0;
   text-align: center;
+  cursor: pointer;
 }
 li.active {
   background: lightgreen;
