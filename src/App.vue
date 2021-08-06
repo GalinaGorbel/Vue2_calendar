@@ -1,8 +1,12 @@
 <template>
   <div>
-    <button @click="changeLanguage('rus')">Rus</button>
-    <button @click="changeLanguage('eng')">Eng</button>
-    <p>Выбранная дата: {{ date }} {{ months[language][month] }} {{ year }}</p>
+    <the-header
+      :date="date"
+      :month="month"
+      :year="year"
+      :lang="language"
+      @newLang="language = $event"
+    ></the-header>
     <div id="calendar">
       <calendar-header
         :monthName="months[language][month]"
@@ -25,8 +29,11 @@
 <script>
 import CalendarBody from "./components/CalendarBody.vue";
 import CalendarHeader from "./components/CalendarHeader.vue";
+import TheHeader from "./components/TheHeader.vue";
+
 export default {
   data() {
+    
     return {
       language: "rus",
       date: 0 || new Date().getDate(),
@@ -73,13 +80,13 @@ export default {
       this.language = lang;
     },
   },
-/*   beforeMount() {
+  /*   beforeMount() {
     let date = new Date(2011, 3, 5);
     this.month = date.getMonth();
     this.year = date.getFullYear();
     this.date = date.getDate();
   }, */
-  components: { CalendarHeader, CalendarBody },
+  components: { CalendarHeader, CalendarBody, TheHeader },
 };
 </script>
 
