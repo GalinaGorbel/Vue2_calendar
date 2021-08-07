@@ -9,6 +9,7 @@
 <script>
 export default {
   props: ["monthName", "year", "month"],
+  emits: ["newMonth", "newYear"],
   data() {
     return {
       newYear: this.year,

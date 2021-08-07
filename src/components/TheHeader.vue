@@ -9,6 +9,7 @@
 <script>
 export default {
   props: ['date', 'year', 'lang', 'month'],
+  emits: ['newLang'],
   data() {
     return {
       language: "rus",
